@@ -16,11 +16,7 @@ public final class Main extends JavaPlugin {
         getCommand("fly").setExecutor(new FlyCommand());
 
     }
-    public void onPlayerDeathEvent(CommandSender sender){
-        Player p = (Player) sender;
-        p.sendMessage(ChatColor.DARK_RED + "You have died!");
-
-    }
+    
     @Override
     public void onDisable() {
 
